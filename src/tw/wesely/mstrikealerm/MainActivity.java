@@ -451,11 +451,12 @@ public class MainActivity extends ActionBarActivity implements
 				wv2.loadDataWithBaseURL(
 						"",
 						"<table border=\"1\" style=\"border-collapse:collapse;\" borderColor=\"black\" >"
-								+ document.select("table").get(2).html()
+								+ document.select("table").get(1).html()
 								+ "</table>", "text/html", "UTF-8", "");
 
 				rootLL.addView(wv2);
 
+				/*
 				TextView tvHeader = (TextView) inflater.inflate(
 						R.layout.component_headertextview, null);
 				tvHeader.setText("【今後降臨時刻預定】\n*取自日文版攻略網\n點選連結會前往日版網站");
@@ -468,6 +469,7 @@ public class MainActivity extends ActionBarActivity implements
 								+ document.select("table").get(3).html()
 								+ "</table>", "text/html", "UTF-8", "");
 				rootLL.addView(wv);
+				*/
 				break;
 			case 5:
 
